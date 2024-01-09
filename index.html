@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Multi-step form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <div class="container two">
+    <!-- Sidebar start -->
+    <div class="sidebar">
+      <div class="sidebar-item">
+        <div class="num a">
+          1
+        </div>
+        <div class="text">
+          <div class="tag">
+            Step 1
+          </div>
+          <div class="tag-data">
+            Your info
+          </div>
+        </div>
+      </div>
+      <div class="sidebar-item">
+        <div class="num b">
+          2
+        </div>
+        <div class="text">
+          <div class="tag">
+            Step 2
+          </div>
+          <div class="tag-data">
+            Select plan
+          </div>
+        </div>
+      </div>
+      <div class="sidebar-item">
+        <div class="num c">
+          3
+        </div>
+        <div class="text">
+          <div class="tag">
+            Step 3
+          </div>
+          <div class="tag-data">
+            Add-ons
+          </div>
+        </div>  
+      </div>
+      <div class="sidebar-item">
+        <div class="num d">
+          4
+        </div>
+        <div class="text">
+          <div class="tag">
+            Step 4
+          </div>
+          <div class="tag-data">
+            Summary
+          </div>
+        </div>
+      </div>  
+    </div>
+    <!-- Sidebar end -->
+
+    <div class="content-container">
+      <!-- Step 1 start -->
+      <div class="step one">
+        <div class="top">
+          <div class="title">
+            Personal info
+          </div>
+          <div class="description">
+            Please provide your name, email address, and phone number.
+          </div>
+        </div>
+        <div class="input">
+          <div class="input-item-1">
+            <div class="label">
+              <div class="label-1">Name</div>
+              <div class="error-msg"></div>
+            </div>
+            <input type="text" placeholder="e.g. Stephen King">
+          </div>
+          <div class="input-item-1">
+            <div class="label">
+              <div class="label-1">Email Address</div>
+              <div class="error-msg"></div>
+            </div>
+            <input type="email" placeholder="e.g. stephenking@lorem.com">
+          </div>
+          <div class="input-item-1">
+            <div class="label">
+              <div class="label-1">Phone Number</div>
+              <div class="error-msg"></div>
+            </div>
+            <input type="number" placeholder="e.g. +1 234 567 890">
+          </div>
+        </div>
+        <div class="btn-section">
+          <button class="next-btn one">
+              Next Step
+          </button>
+        </div>
+      </div>
+      <!-- Step 1 end -->
+      
+      <!-- Step 2 start -->
+      <div class="step two">
+        <div class="top">
+          <div class="title">
+            Select your plan
+          </div>
+          <div class="description">
+            You have the option of monthly or yearly billing.
+          </div>
+        </div>
+        <div class="input">
+          <div id="main">
+            <div class="input-item-2">
+              <div class="arcade-img"></div>
+              <div class="label-price">
+                <div class="label-2">
+                  Arcade
+                </div>
+                <div class="price">
+                 <span class="monthly">$9/mo</span> <span class="yearly">$90/yr</span>
+                </div>
+                <div class="discount">
+                  2 months free
+                </div>
+              </div>
+            </div>
+            <div class="input-item-2">
+              <div class="advanced-img"></div>
+              <div class="label-price">
+                <div class="label-2">
+                  Advanced
+                </div>
+                <div class="price">
+                   <span class="monthly">$12/mo</span> <span class="yearly">$120/yr</span>
+                </div>
+                <div class="discount">
+                  2 months free
+                </div>
+              </div>
+            </div>
+            <div class="input-item-2">
+              <div class="pro-img"></div>
+              <div class="label-price">
+                <div class="label-2">
+                  Pro
+                </div>
+                <div class="price">
+                   <span class="monthly">$15/mo</span> <span class="yearly">$150/yr</span>
+                </div>
+                <div class="discount">
+                  2 months free
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="switch">
+            <div class="switch-1">
+              Monthly
+            </div>
+            <div class="switch-btn">
+              <div id="indicator"></div>
+            </div>
+            <div class="switch-2">
+              Yearly
+            </div>
+          </div>
+        </div>
+        <div class="error-two"></div>
+        <div class="btn-section">
+          <button class="next-btn two">
+              Next Step
+          </button>
+          <button class="back-btn two">
+              Go Back
+          </button>
+        </div>
+      </div>
+      <!-- Step 2 end -->
+      
+      <!-- Step 3 start -->
+      <div class="step three">
+        <div class="top">
+          <div class="title">
+            Pick add-ons
+          </div>
+          <div class="description">
+            Add-ons help enhance your gaming experience.
+          </div>
+        </div>
+        <div class="input">
+          <div class="input-item-3">
+            <div class="checkbox"></div>
+            <div class="detail">
+              <div class="label">
+                Online service
+              </div>
+              <div class="label-data">
+                Access to multiplayer games
+              </div>
+            </div>
+            <div class="price-3">
+              <span class="monthly">+$1/mo</span> <span class="yearly">+$10/yr</span>
+            </div>
+          </div>
+          <div class="input-item-3">
+            <div class="checkbox"></div>
+            <div class="detail">
+              <div class="label">
+                Larger storage
+              </div>
+              <div class="label-data">
+                Extra 1TB of cloud save
+              </div>
+            </div>
+            <div class="price-3">
+              <span class="monthly">+$2/mo</span> <span class="yearly">+$20/yr</span>
+            </div>
+          </div>
+          <div class="input-item-3">
+            <div class="checkbox"></div>
+            <div class="detail">
+              <div class="label">
+                Customizable Profile
+              </div>
+              <div class="label-data">
+                Custom theme on your profile
+              </div>
+            </div>
+            <div class="price-3">
+              <span class="monthly">+$2/mo</span> <span class="yearly">+$20/yr</span>
+            </div>
+          </div>
+        </div>
+        <div class="btn-section">
+          <button class="next-btn three">
+            Next Step
+          </button>
+          <button class="back-btn three">
+            Go Back
+          </button>
+        </div>
+      </div>
+      <!-- Step 3 end -->
+      
+      <!-- Step 4 start -->
+      <!-- Dynamically add subscription and add-on selections here -->
+      <div class="step four">
+        <div class="top">
+          <div class="title">
+            Finishing up
+          </div>
+          <div class="description">
+            Double-check everything looks OK before confirming.
+          </div>
+        </div>
+        <div class="display">
+          <div class="display-item">
+            <div class="sub-data">
+              <div class="sub-name">
+                 <span class="sub-label-display"></span> (<span class="monthly">Monthly</span><span class="yearly">Yearly</span>)
+              </div>
+              <div class="change-btn">
+                Change
+              </div>
+            </div>
+            <div class="sub-price">
+              +$<span class="sub-price-display"></span>/<span class="monthly">mo</span><span class="yearly">yr</span>
+            </div>
+          </div>
+          <hr>
+          <div class="add-ons-display"></div>
+        </div>
+        <div class="sum">
+          <div class="sum-data">
+            Total (per <span class="yearly">year</span><span class="monthly">month</span>)
+          </div>
+          <div class="sum-price">
+            $<span class="sum-price-display"></span></span>/<span class="monthly">mo</span><span class="yearly">yr</span>
+            </div>
+        </div>
+        <div class="btn-section">
+          <button class="next-btn confirm">
+            Confirm
+          </button>
+          <button class="back-btn four">
+            Go Back
+          </button>
+        </div>
+      </div>
+      <!-- Step 4 end -->
+      
+      <!-- Step 5 start -->
+      <div class="step five">
+        <div class="svg"></div>
+        <div class="title">
+          Thank you!
+        </div>
+        <div class="msg-content">
+          Thanks for confirming your subscription! We hope you have fun
+          using our platform. If you ever need support, please feel free
+          to email us at support@loremgaming.com.
+        </div>
+      </div>
+    </div>
+    <!-- Step 5 end -->
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
